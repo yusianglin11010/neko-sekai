@@ -1,0 +1,83 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.image-bottom {
+    margin-top: -200px;
+}
+
+.hr-solid-content {
+    color: #000;
+    border: 0;
+    font-size: 12px;
+    padding: 1em 0;
+    position: relative;
+}
+.hr-solid-content::before {
+    content: attr(data-content);
+    position: absolute;
+    padding: 0 1ch;
+    line-height: 1px;
+    border: solid #d0d0d5;
+    border-width: 0 99vw;
+    width: fit-content;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.welcome-content {
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+.welcome-title {
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+.home-project-card{
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    animation: fadein 5s;
+    box-shadow: 0;
+    transition: box-shadow .5s;
+  
+}
+
+.home-project-card:hover {
+    box-shadow: 12px 12px 11px rgba(33,33,33,.2); 
+}
+
+/* .my-card-img {
+    border-radius: 10%;
+} */
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.my-nav-bar  {
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    animation: fadein 5s;
+}

@@ -1,13 +1,12 @@
-# neko sekai website\
+# neko sekai website
 [![AWS EC2][aws-ec2-shield]][aws-ec2-url]
 [![Docker][docker-shield]][docker-url]
 [![Nginx][nginx-shield]][nginx-url]
 [![Cloudflare][cloudflare-shield]][cloudflare-url]
 [![MIT License][license-shield]][license-url]
-
-## Contact
+- self-hosted website
 - Project Link: https://nekosekai.com
-- Email: yusianglin11010@gmail.com
+
 ## Built With
 - DNS server with [Cloudflare][cloudflare-url]
 - Realize HTTPS with Cloudflare [flexible SSL](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/flexible/)
@@ -19,10 +18,18 @@
 - [x] Host On AWS 
 - [x] Add SSL Connection
 - [ ] Add home page  
+- [ ] Add Cats page
+- [ ] Add Tech page
+- [ ] Add Nihongo page
+- [ ] Add About page
 - [ ] Add Github action for auto deployment
+- [ ] Add image CDN
 
 ## License
 MIT
+
+## Contact
+- Email: yusianglin11010@gmail.com
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/yusianglin11010/neko-sekai/LICENSE
