@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ねこセカイ</title>
-    <link rel="icon" href="https://img.icons8.com/ios-filled/100/null/pet-commands-stay.png">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ねこセカイ</title>
+  <link rel="icon"
+    href="https://img.icons8.com/ios-filled/100/null/pet-commands-stay.png">
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
 </head>
+
 <body>
   <div class="container-fluid p-0 m-0">
     <div class="row">
-      <div class="col">
-        <nav class="navbar navbar-expand-lg bg-black my-nav-bar">
+      <div class="col nav-row m-0 p-0">
+        <nav class="navbar navbar-expand-lg bg-dark bg-gradient my-nav-bar">
           <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Cat's World</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-white" href="./index.html">Cat's World</a>
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav mx-auto">
-                <a class="nav-link m-1 text-white" href="#">Home</a>
-                <a class="nav-link m-1 text-white" href="#">Cats</a>
-                <a class="nav-link m-1 text-white" href="#">Tech</a>
-                <a class="nav-link m-1 text-white" href="#">Nihongo</a>
-                <a class="nav-link m-1 text-white" href="#">About</a>
+                <a class="nav-link m-1 text-white" href="./index.html">Home</a>
+                <a class="nav-link m-1 text-white"
+                  href="./pages/cats.html">Cats</a>
+                <a class="nav-link m-1 text-white" href="./pages/tech.html">Tech</a>
+                <a class="nav-link m-1 text-white" href="./pages/nihongo.html">Nihongo</a>
+                <a class="nav-link m-1 text-white" href="./pages/about.html">About</a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link m-1 text-white" href="https://github.com/yusianglin11010" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                </a>
+                <a class="nav-link m-1 text-white"href="https://www.linkedin.com/in/devin-yu-siang-lin-089b52211/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -36,49 +59,58 @@
       <div class="row m-0 p-0">
         <div class="col-12 col-md-3">
           <div class="item m-3">
-            <img src="https://31.media.tumblr.com/64e4233fcc3ed45078b38256f4f278b7/tumblr_mth11vUZlv1rp04p3o1_500.gif" alt="" class="w-100">
+            <img
+              src="https://31.media.tumblr.com/64e4233fcc3ed45078b38256f4f278b7/tumblr_mth11vUZlv1rp04p3o1_500.gif"
+              alt="" class="w-100">
             <h1 class="text-center welcome-title">Welcome!</h1>
-            <p class="text-center welcome-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, omnis!</p>
+            <p class="text-center welcome-content"></p>
           </div>
         </div>
-        <div class="col-12 col-md-9">
-          <img src="https://picsum.photos/1300/600?random=10" alt="" class="rounded-bottom d-block w-100">
+        <div class="col-12 col-md-9 home-image-row overflow-hidden">
+          <img src="./images/cat_2.webp" alt=""
+            class="rounded-bottom d-block home-image">
         </div>
       </div>
     </div>
     <hr data-content="Recent Project" class="w-75 mx-auto hr-solid-content">
     <div class="row row-cols-1 row-cols-md-5 w-75 mx-auto">
       <div class="col"></div>
-      <div class="col mt-3 mt-md-0">
-        <a href="" class="custom-card">
-          <div class="card home-project-card">
-            <img src="https://picsum.photos/100/50?random=1" class="rounded m-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <div class="col mt-3 mb-3 mt-md-0">
+        <a href="https://yusianglin11010.github.io" class="custom-card">
+          <div class="card home-project-card h-100">
+            <img src="./images/blog-intro.webp" class="rounded m-2"alt="...">
+            <div class="card-body home-project-card-body">
+              <h5 class="card-title">Technical Blog</h5>
+              <p class="card-text">Technical blog about my reading note or some
+                software hand-on</p>
             </div>
           </div>
         </a>
 
       </div>
-      <div class="col mt-3 mt-md-0">
-        <a href="" class="custom-card">
-          <div class="card home-project-card">
-            <img src="https://picsum.photos/100/50?random=1" class="rounded m-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <div class="col mt-3 mb-3 mt-md-0">
+        <a href="https://yusianglin11010.github.io/nihongo-hit/"
+          class="custom-card">
+          <div class="card home-project-card h-100">
+            <img src="./images/nihongo-hit-intro.webp" class="rounded m-2"
+              alt="...">
+            <div class="card-body home-project-card-body">
+              <h5 class="card-title">Japanese Vocabulary Exercises</h5>
+              <p class="card-text">An easy to use website for practicing your
+                japanese vocabulary.</p>
             </div>
           </div>
         </a>
       </div>
       <div class="col mt-3 mb-3 mt-md-0">
         <a href="" class="custom-card">
-          <div class="card home-project-card">
-            <img src="https://picsum.photos/100/50?random=1" class="rounded m-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <div class="card home-project-card h-100">
+            <img src="./images/algorithm.webp" class="rounded m-2"
+              alt="...">
+            <div class="card-body home-project-card-body">
+              <h5 class="card-title">Leetcode 365</h5>
+              <p class="card-text">2023 annual plan, solve least one question
+                every day.</p>
             </div>
           </div>
         </a>
@@ -87,7 +119,11 @@
     </div>
 
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
