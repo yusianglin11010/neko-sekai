@@ -1,4 +1,4 @@
-name: build-a-docker-image
+name: aws-ci-cd
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'main'
 
 jobs:
-  docker:
+  CI:
     runs-on: ubuntu-latest
     steps:
       -
@@ -31,3 +31,25 @@ jobs:
           context: .
           push: true
           tags: devinlin11010/nginx-neko-sekai:latest
+  CD:
+    needs: CI
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2 
+      - name: Deploy in EC2
+        env:
+            PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
+            HOSTNAME : ${{ secrets.AWS_HOSTNAME  }}
+            USER_NAME : ${{ secrets.AWS_USER  }}
+            
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
+          
+            #Now we have got the access of EC2 and we will start the deploy
+            docker pull devinlin11010/nginx-neko-sekai:latest
+            docker stop nginx && docker rm nginx
+            docker run -p 80:80 -d --network="neko-sekai-network" --name="nginx" devinlin11010/nginx-neko-sekai:latest
+          '
