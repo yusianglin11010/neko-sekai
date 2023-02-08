@@ -14,7 +14,7 @@
 
 - Realized by Github Actions and Docker Hub
 
-![](./aws-ec2-ci-cd-structure.png)
+![](./aws-ec2-ci-cd-structure-background.png)
 
 ## Built With
 - DNS server with [Cloudflare][cloudflare-url]
